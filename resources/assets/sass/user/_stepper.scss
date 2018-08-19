@@ -1,0 +1,101 @@
+.step-tabs {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.step-tab {
+    flex: 1 0 33%;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    .step-tab-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        background: #fff;
+        .step-tab-info-link {
+            padding: 5px 0 5px 25px;
+        }
+        &:before,
+        &:after {
+            content: " ";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            position: absolute;
+            top: 50%;
+            margin-top: -50px;
+            left: 100%;
+        }
+        &:before {
+            border-left: 30px solid #fff;
+            margin-left: 1px;
+            z-index: 1;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .step-tabs {
+        overflow: hidden;
+        padding-right: 35px;
+    }
+    .step-tabs .step-tab .step-tab-info {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 0 5px 5px;
+        width: 100%;
+        background: hsla(5, 100%, 60%, 1);
+        position: relative;
+        transition: all .5s ease-in-out;
+        &:after {
+            content: " ";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 30px solid hsla(5, 100%, 60%, 1);
+            position: absolute;
+            top: 50%;
+            margin-top: -50px;
+            left: 100%;
+            z-index: 2;
+            transition: all .5s ease-in-out;
+        }
+        &:before {
+            content: " ";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 30px solid #fff;
+            position: absolute;
+            top: 50%;
+            margin-top: -50px;
+            margin-left: 1px;
+            left: 100%;
+            z-index: 1;
+            transition: all .5s ease-in-out;
+        }
+    }
+    .step-tabs .step-tab.touched-step .step-tab-info {
+        background: hsla(5, 100%, 50%, 1);
+    }
+    .step-tabs .step-tab.touched-step .step-tab-info:after {
+        border-left-color: hsla(5, 100%, 50%, 1);
+    }
+}
+.step-tabs .step-tab-info:last-child .step-tab-info:after {
+    border: 0;
+}
+.step-tabs .step-tab .step-tab-info-link:after {
+    border-left-color: hsla(35, 100%, 54%, 1) !important;
+}

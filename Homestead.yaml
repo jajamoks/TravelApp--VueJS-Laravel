@@ -1,0 +1,21 @@
+ip: 192.168.10.10
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: /home/qwales1/projects/escapetoshape
+        to: /home/vagrant/Code/escapetoshape
+sites:
+    -
+        map: escapetoshape.test
+        to: /home/vagrant/Code/escapetoshape/public
+        schedule: true
+databases:
+    - escapetoshape
+    - dusk
+name: escapetoshape
+hostname: escapetoshape

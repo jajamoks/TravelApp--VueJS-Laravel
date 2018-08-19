@@ -1,0 +1,14 @@
+@extends('layouts.public')
+@section('content')
+@include('pages.home.hero')
+@include('pages.home.info-section')
+@include('partials.featured-escapes')
+@include('pages.home.quote')
+@include('pages.home.destination-banner')
+@include('pages.home.as-seen')
+@include('pages.home.instagram')
+@include('pages.home.newsletter')
+@endsection
+@section('sidemenu')
+@include('partials.sidemenu-full')
+@endsection

@@ -1,0 +1,189 @@
+<?php
+
+use Illuminate\Http\Request;
+
+/*
+|--------------------------------------------------------------------------
+| API Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register API routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| is assigned the "api" middleware group. Enjoy building your API!
+|
+*/
+Route::group(['middleware' => 'admin'], function () {
+    Route::resource(
+        'posts',
+        'PostController'
+    );
+    Route::resource(
+        'team',
+        'TeamMembersController'
+    );
+    Route::resource(
+        'leads',
+        'LeadsController'
+    );
+    Route::resource(
+        'post_categories',
+        'PostCategoriesController'
+    );
+    Route::resource(
+        'post_tags',
+        'PostTagsController'
+    );
+    Route::get(
+        '/post_authors',
+        'AuthorsController@index'
+    );
+    Route::post(
+        '/media',
+        'MediaController@store'
+    );
+    Route::get(
+        '/escapes-as-options',
+        'EscapeController@asOptions'
+    );
+    Route::delete(
+        '/escapes/{id}/itinerary',
+        'EscapeItineraryController@destroy'
+    );
+    Route::put(
+        '/escapes/{id}/itinerary',
+        'EscapeItineraryController@update'
+    );
+    Route::resource(
+        '/escapes/{id}/itinerary',
+        'EscapeItineraryController'
+    );
+    Route::resource(
+        '/escapes/{escape}/packing_list/{packing_list}/items',
+        'EscapePackingListItemController'
+    );
+    Route::resource(
+        '/escapes/{escape}/reading_list/{reading_list}/items',
+        'EscapeReadingListItemController'
+    );
+    Route::resource(
+        '/escapes/{escape}/itinerary/{itinerary}/activities',
+        'EscapeItineraryActivityController'
+    );
+    Route::resource(
+        '/escapes/{escape}/reservations',
+        'EscapeReservationsController'
+    );
+    Route::post(
+        '/escapes/{escape}/reservations/{reservation}/balance-reminder',
+        'EscapeReservationsController@sendBalanceReminder'
+    );
+    Route::post(
+        '/escapes/{escape}/reservations/{reservation}/missing-info-reminder',
+        'EscapeReservationsController@sendMissingInfoReminder'
+    );
+    Route::post(
+        '/escapes/{escape}/copy-lists/{escapeToCopy}',
+        'EscapeController@copyExistingLists'
+    );
+    Route::resource(
+        '/escapes',
+        'EscapeController'
+    );
+    Route::put(
+        '/escape_types/{id}/features',
+        'EscapeTypeFeatureController@bulkUpdate'
+    );
+    Route::resource(
+        '/escape_types/{id}/features',
+        'EscapeTypeFeatureController'
+    );
+    Route::put(
+        '/escape_types/{id}/teachers',
+        'EscapeTypeTeacherController@bulkUpdate'
+    );
+    Route::resource(
+        '/escape_types/{id}/teachers',
+        'EscapeTypeTeacherController'
+    );
+    Route::delete(
+        '/escape_types/{id}/gallery/{media}',
+        'EscapeTypeController@deleteGalleryImage'
+    );
+    Route::resource(
+        '/escape_types',
+        'EscapeTypeController'
+    );
+    Route::put(
+        '/escape_types/{id}/testimonials',
+        'EscapeTypeTestimonialController@bulkUpdate'
+    );
+    Route::resource(
+        '/escape_types/{id}/testimonials',
+        'EscapeTypeTestimonialController'
+    );
+    Route::resource(
+        '/press',
+        'PressController'
+    );
+    Route::resource(
+        '/feed',
+        'ActivityController'
+    );
+    Route::resource(
+        '/testimonials',
+        'TestimonialsController'
+    );
+
+    Route::delete(
+        '/posts/{id}/delete',
+        'PostController@destroy'
+    );
+});
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource(
+        '/user/reservations/{reservation}/waiver',
+        'ReservationWaiverController'
+    );
+    Route::post(
+        '/user/reservations/{id}/payment',
+        'UserPaymentController@process'
+    );
+    Route::resource(
+        '/user/reservations/{reservation}/flight',
+        'UserFlightController'
+    );
+    Route::resource(
+        '/user/reservations',
+        'UserReservationsController'
+    );
+    Route::put(
+        '/user/diet',
+        'UserProfileController@updateDiet'
+    );
+    Route::put(
+        '/user/health',
+        'UserProfileController@updateHealth'
+    );
+    Route::put(
+        '/user/billing',
+        'UserProfileController@updateBilling'
+    );
+    Route::put(
+        '/user/contact',
+        'UserProfileController@updateContact'
+    );
+    Route::put(
+        '/user/additional-info',
+        'UserProfileController@updateAdditionalInfo'
+    );
+    Route::put(
+        '/user/account',
+        'UserProfileController@updateUser'
+    );
+    Route::resource(
+        '/user',
+        'UserController'
+    );
+
+});

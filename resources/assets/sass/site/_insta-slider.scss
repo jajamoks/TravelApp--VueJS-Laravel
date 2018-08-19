@@ -1,0 +1,44 @@
+@import '~slick-carousel/slick/slick';
+.insta-post {
+    padding: 5px;
+    overflow: hidden;
+    a {
+        position: relative;
+        text-decoration: none;
+        display: block;
+        .caption {
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left:0;
+            right:0;
+            background: rgba(255,255,225, 0.6);
+            opacity: 0;
+            transition: opacity 1s;
+            padding: 5px;
+            font-size: .8em;
+            overflow: hidden;
+        }
+        &:hover {
+            color: #333;
+            .caption {
+                opacity: 1;
+                text-decoration: none;
+                cursor: pointer;
+                overflow: hidden;
+            }
+        }
+    }
+    .insta-header {
+        min-height: 20px;
+        margin-top: 5px;
+        font-size: 1.1em;
+        text-align: center;
+    }
+}
+.e2s-instagram-section {
+    h5 {
+        text-transform: uppercase;
+    }
+
+}

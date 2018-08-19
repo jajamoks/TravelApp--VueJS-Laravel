@@ -1,0 +1,49 @@
+div[class^="event"]{
+    margin:auto;
+    width: 100%;
+}
+.event-1 {
+    background: rgba(124, 187, 145, .4)
+}
+.event-2 {
+    background: rgba(81, 94, 145, .4)
+}
+#map {
+    height: 350px;
+    width: 100%;
+}
+.e2s-calendar-header {
+    select {
+        margin: 0;
+    }
+}
+.e2s-calendar-title {
+    padding: 10px;
+}
+.e2s-calendar-month {
+    margin-bottom: 25px;
+}
+.e2s-escape-item {
+  position: relative;
+  .e2s-escape-info {
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,.8);
+    .escape-date {
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    .escape-location {
+      font-size: 1.2em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
+.e2s-escape-cta {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}

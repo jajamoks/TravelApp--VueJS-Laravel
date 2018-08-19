@@ -1,0 +1,2 @@
+	<h3>Force Majeure</h3>
+	<p>Escape To Shape cannot accept liability or pay any compensation where the performance or prompt performance of contractual obligations is prevented or affected by force majeure. In this Agreement, “force majeure” means any event which Escape To Shape or the supplier of services in question could not foresee or avoid including but not limited to civil strike, industrial deposit, natural disaster, adverse weather conditions and all similar events outside our control.</p>

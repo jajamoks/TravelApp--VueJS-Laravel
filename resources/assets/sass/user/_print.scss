@@ -1,0 +1,39 @@
+@media print {
+    @page {
+        size: letter portrait;
+        margin: 3cm;
+    }
+    body * {
+        visibility: hidden;
+    }
+    .main-content {
+        margin: 0;
+        padding: 0;
+    }
+
+    body .printable {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    body .printable {
+        visibility: visible;
+        display: block;
+    }
+    body .printable * {
+        visibility: visible;
+        display: block;
+    }
+
+    body .printable {
+        padding: 0;
+    }
+
+    body .printable {
+        margin-bottom: 20px;
+    }
+}

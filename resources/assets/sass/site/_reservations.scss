@@ -1,0 +1,45 @@
+.reservations-cart {
+    h5 {
+        margin: 0;
+    }
+    hr {
+        margin: 5px auto;
+    }
+    .room-type {
+        text-transform: capitalize;
+    }
+}
+@media (min-width: 992px) {
+    .reservations-info {
+        display: flex;
+        margin: 0 15px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .info-item {
+            flex: 1 0 25%;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    }
+}
+
+#reservation-form {
+    .inline-input-expiry {
+        max-width: 45%;
+        display: inline-block;
+    }
+    .help-block {
+        margin: 2px auto;
+    }
+    .deposit-total {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin: 20px auto;
+    }
+    .form-control {
+        margin-bottom: 20px;
+    }
+
+}

@@ -1,0 +1,27 @@
+.e2s-post-list .blog:not(:first-child) {
+    margin-top: 50px;
+}
+
+.e2s-post-list .post-content-area .img-container {
+    min-height: 300px;
+}
+
+.post-content-area .img-container {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .post-list-image {
+        max-height: 500px;
+    }
+    .e2s-post-list .post-content-area .img-container {
+        min-height: 500px;
+    }
+}
+.blog.block.post-content-area {
+    img {
+        width: inherit;
+        height: inherit;
+        margin: auto;
+    }
+}

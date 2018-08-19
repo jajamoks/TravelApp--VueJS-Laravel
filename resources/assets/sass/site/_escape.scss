@@ -1,0 +1,209 @@
+.featherlight-previous {
+    span {
+        color: #fff;
+        display: block;
+        font-family: 'FontAwesome';
+        text-shadow: 1px 1px 3px #000;
+    }
+    &:hover {
+        background: transparent;
+    }
+}
+
+.featherlight-next {
+    display: block;
+    span {
+        color: #fff;
+        display: block;
+        font-family: 'FontAwesome';
+        text-shadow: 1px 1px 3px #000;
+    }
+    &:hover {
+        background: transparent;
+    }
+}
+
+.escape-page {
+    h1 {
+        margin-top: 25px;
+    }
+    section {
+        margin: 20px auto;
+    }
+    .booking-form {
+        margin-top: -41px;
+        border: 1px solid #000;
+        .header {
+            color: #fff;
+            background-color: #000;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .form {
+            padding: 0 15px;
+            margin-top: 25px;
+            .e2s-select-wrap {
+                margin-bottom: 25px;
+            }
+            .cta {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .testimonial {
+        margin: 15px auto;
+        .text {
+            font-style: italic;
+        }
+        .author {
+            margin-top: 10px;
+            .name {
+                font-size: 1.2em;
+            }
+        }
+    }
+    .rate {
+        margin: 5px auto;
+        .rate-label {
+            font-size: 1.2em;
+            line-height: 1.2em;
+        }
+        .rate-value {
+            font-size: 1.5em;
+            margin: auto 10px;
+        }
+    }
+    .summary-label {
+        font-size: 28px;
+        line-height: 20px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        .summary-icon {
+            background: #eee;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        i {
+        }
+    }
+    .summary-content {
+        line-height: 20px;
+    }
+
+    .escape-photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        .gallery-item {
+            flex: 1 0 33%;
+            height: 100px;
+            max-width: 30%;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 2.5px;
+        }
+    }
+}
+.escape-hero {
+    position: relative;
+    .escape-hero-info {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+        flex-direction: column;
+        h1,
+        h4 {
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            margin: 0;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .escape-hero {
+        position: relative;
+        .escape-hero-info {
+            position: absolute;
+            display: block;
+            bottom: 20px;
+            left: 20px;
+            right: auto;
+            top: auto;
+            h1 {
+                color: #fff;
+                text-shadow: 1px 1px 1px #000;
+            }
+        }
+    }
+}
+
+.escape-header {
+    position: relative;
+    .slide {
+        min-height: 500px;
+    }
+    .title {
+        position: absolute;
+        bottom: 0;
+        left: 10;
+        color: #fff;
+        h1 {
+            color: #000;
+            margin: 0;
+        }
+    }
+}
+
+.sold-out-escape {
+    h1 {
+        color: #fff;
+        text-align: center;
+    }
+    .btn {
+        margin-bottom: 20px;
+    }
+}
+
+.escape-teacher-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+
+.escape-teacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    h4 {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 768px) {
+    .escape-teacher {
+        flex-direction: row;
+    }
+    .escape-teacher-image {
+        margin-right: 30px;
+    }
+}

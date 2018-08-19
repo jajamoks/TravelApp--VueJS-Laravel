@@ -1,0 +1,7 @@
+<h3>Reservations</h3>
+
+<p>A non-refundable deposit in the amount indicated on the RESERVATION page of the ESCAPE you are registering for is required to confirm your reservation. By submitting your credit card information you authorize Escape To Shape to charge your credit card for this amount.</p>
+
+<p>The balance of your payment is required to be paid in full 6 (six) weeks prior to the start date of the Escape you are registering for, unless alternative arrangements have been previously discussed. A reminder email will be sent to you prior to the due date. The balance due is non-refundable upon payment. Cancellations less than six weeks prior to arrival are non refundable, but Escape to Shape will do its best to apply the balance of your payment, after the initial non-refundable deposit, towards future travel with Escape to Shape, provided that, among other things, we can find a replacement or substitute for you and/or your group.</p>
+
+<p class="space-bottom">We strongly recommend the purchase of travel insurance, which will come in handy should you encounter any unforeseen medical issues prior to traveling or while traveling, last minute flight cancellations or personal issues that effect your trip. Special rates and policies can be found by submitting your info below. Please note that we are Virtuoso agents so you are able to purchase the Classic for Virtuoso policy, if interested, and the JOURNEY plan has been specifically designed with our clients in mind.</p>

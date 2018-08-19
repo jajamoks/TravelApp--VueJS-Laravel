@@ -1,0 +1,40 @@
+.my-escapes-item {
+}
+
+.empty-escape-item {
+    padding: 20px;
+    text-align: center;
+    .empty-calendar {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 468px) {
+    .empty-escape-item {
+        padding: 40px;
+        h4 {
+            display: inline-block;
+        }
+        .empty-calendar {
+            font-size: 3em;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .book-escape-button {
+        float: right;
+    }
+}
+
+.icon-lg {
+    font-size: 1.6em;
+}
+
+.icon-danger {
+    color: #a94442;
+}
+.icon-success {
+    color: #3c763d;
+}

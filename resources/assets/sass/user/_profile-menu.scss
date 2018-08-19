@@ -1,0 +1,43 @@
+@media (max-width: 486px) {
+    .profile-menu {
+        z-index: 999;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        float: none;
+        padding: 0;
+        .panel-heading {
+            text-align: center;
+            padding: 0;
+            padding: 2px;
+        }
+        .panel-body {
+            padding: 2px;
+        }
+        .panel {
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+        li {
+            text-align: center;
+            flex-grow: 1;
+            &:not(:first-child) {
+                border-left: 1px solid;
+            }
+        }
+    }
+}
+.inline-menu-container {
+    display: inline-block;
+}
+.inline-menu-label {
+    display: inline-block;
+}

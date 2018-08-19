@@ -1,0 +1,524 @@
+.home-hero {
+    position: relative;
+    .home-slide {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            z-index: 0;
+            background: rgba(0, 0, 0, .1);
+        }
+    }
+    .hero-info {
+        z-index: 10;
+        margin-top: 80px;
+        .hero-info-inner {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+    .hero-title {
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+        font-family: $fancy-font;
+        text-align: center;
+        font-size: 40px;
+        margin: 0;
+        white-space: normal;
+        padding-top: 40px;
+    }
+    @media (min-width: 768px) {
+        .home-slide {
+            .slide-wrap {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                margin-top: auto;
+                height: 100%;
+                .hero-title {
+                    font-size: 60px;
+                    white-space: pre;
+                    text-align: inherit;
+                }
+            }
+            &.namibia {
+                background-position: center 45%;
+                .slide-wrap {
+                    margin-top: auto;
+                    height: 100%;
+                    .hero-title {
+                        align-self: flex-end;
+                    }
+                }
+            }
+            &.atacama {
+                background-position: center center;
+                .slide-wrap {
+                    .hero-title {
+                        align-self: flex-end;
+                        width: 100%;
+                        text-align: right;
+                        margin-right: 65px;
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+            &.botswana {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        text-align: right;
+                        margin-right: 65px;
+                    }
+                }
+            }
+            &.bhutan {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        align-self: flex-end;
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+            &.patagonia {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        align-self: flex-end;
+                    }
+                }
+            }
+            &.nicaragua {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        text-align: right;
+                        margin-right: 65px;
+                        align-self: flex-end;
+                    }
+                }
+            }
+            &.cartagena {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        align-self: flex-end;
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+            &.cambodia {
+                background-position: center top;
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        text-align: right;
+                        margin-right: 65px;
+                        align-self: flex-end;
+                    }
+                }
+            }
+            &.marrakech {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        align-self: flex-end;
+                    }
+                }
+            }
+            &.brazil {
+                background-position: center bottom;
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        text-align: right;
+                        margin-right: 65px;
+                        align-self: flex-end;
+                    }
+                }
+            }
+            &.sri-lanka {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        text-align: right;
+                        margin-right: 65px;
+                        align-self: flex-end;
+                    }
+                }
+            }
+            &.iceland {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        text-align: right;
+                        margin-right: 65px;
+                        align-self: flex-end;
+                    }
+                }
+            }
+            &.lake-como {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        align-self: flex-end;
+                        margin-bottom: 75px;
+                    }
+                }
+            }
+            &.japan {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        text-align: right;
+                        margin-right: 120px;
+                        align-self: flex-end;
+                    }
+                }
+            }
+            &.prabang {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        align-self: flex-end;
+                    }
+                }
+            }
+            &.yoga {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        align-self: flex-end;
+                    }
+                }
+            }
+            &.galapagos {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        text-align: right;
+                        margin-right: 65px;
+                    }
+                }
+            }
+            &.biking {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        align-self: flex-end;
+                        margin-bottom: 100px;
+                        margin-right: 25px;
+                    }
+                }
+            }
+            &.meditation {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        text-align: right;
+                        margin-right: 65px;
+                    }
+                }
+            }
+            &.boot-camp {
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        text-align: right;
+                        margin-right: 65px;
+                    }
+                }
+            }
+            &.hiking {
+                background-position: center bottom;
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        align-self: flex-start;
+                        margin-top: 65px;
+                        text-align: right;
+                        margin-right: 65px;
+                    }
+                }
+            }
+            &.dining {
+                background-position: center 55%;
+                .slide-wrap {
+                    .hero-title {
+                        width: 100%;
+                        align-self: flex-end;
+                        text-align: right;
+                        margin-right: 65px;
+                    }
+                }
+            }
+        }
+    }
+    .hero-cta {
+        z-index: 10;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+    }
+    .slider-track {
+        transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+
+    .item {
+        height: 100%;
+        position: relative;
+        z-index: 1;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.home-hero {
+    min-height: 400px;
+    .home-slide {
+        height: 400px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .home-hero {
+        height: 500px;
+        .home-slide {
+            height: 500px;
+        }
+    }
+}
+
+.accolades {
+    margin-top: 30px;
+    .accolade {
+        text-transform: none;
+        margin: 0px;
+        line-height: 1.3em;
+    }
+}
+
+.e2s-home-section {
+    .item {
+        margin-top: 45px;
+        p {
+            min-height: 280px;
+        }
+    }
+    text-align: center;
+    h1,
+    h2,
+    h3 {
+        text-transform: uppercase;
+        position: relative;
+        font-style: italic;
+        min-height: 85px;
+        padding-bottom: 10px;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 45%;
+            bottom: 0;
+            height: 1px;
+            width: 10%;
+            border-bottom: 1px solid #000;
+        }
+        span {
+            display: block;
+        }
+        span.e2s-highlight {
+            display: inline;
+            color: #fff;
+            background: red;
+        }
+    }
+
+    @media (min-width: 992px) {
+        h3 {
+            min-height: 100px;
+        }
+    }
+    @media (min-width: 1200px) {
+        h3 {
+            min-height: 100%;
+        }
+    }
+    .img-wrap {
+        height: 300px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .info-squares {
+        font-family: $fancy-font;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .info-square {
+            flex: 1 0 50%;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.top-left {
+                background-color: #bdbdbd;
+                color: #000;
+                text-shadow: 1px 1px 5px #a0a0a0;
+            }
+            &.top-right {
+                background-color: #424242;
+                color: #fff;
+            }
+            &.bottom-left {
+                background-color: #fff;
+                color: #000;
+            }
+            &.bottom-right {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+}
+.e2s-user-section {
+    @media (max-width: 781px) {
+        .item {
+            margin-bottom: 45px;
+        }
+    }
+    @media (min-width: 768px) {
+        div.item:first-child {
+            border-right: 1px solid #000;
+        }
+    }
+    h2 {
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 10px;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 33%;
+            bottom: 0;
+            height: 1px;
+            width: 33%;
+            border-bottom: 1px solid #000;
+        }
+    }
+}
+.home-destination-banner {
+    height: 300px;
+    overflow: hidden;
+}
+
+.e2s-as-seen-section {
+    h4 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .as-seen-item {
+        height: 60px;
+    }
+}
+.e2s-newsletter {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    padding: 20px 0px;
+    & > div {
+        flex: 1 0 45%;
+    }
+
+    h3 {
+        color: #fff;
+        font-style: italic;
+        text-transform: none;
+        margin: 0;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+    .sign-up-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .input-wrap {
+            border-bottom: 1px solid #fff;
+        }
+        input {
+            background: inherit;
+            border: 0;
+            color: #fff;
+        }
+    }
+    @media (min-width: 768px) {
+        input[type="email"] {
+            min-width: 200px;
+            height: 40px;
+        }
+        h4 {
+            margin: 0;
+            display: inline;
+        }
+    }
+    .e2s-input-grp-btn {
+        padding: 11px 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .e2s-newsletter {
+        flex-direction: row;
+        h3 {
+            margin-bottom: 0;
+        }
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 40px;
+        }
+        .sign-up-container {
+            margin-left: 40px;
+        }
+    }
+}
+
+.quote-section {
+    background: #000;
+    padding: 20px;
+    .quote-content {
+        font-style: italic;
+        color: #fff;
+        font-family: $heading-font;
+        text-align: center;
+        font-size: 1.2em;
+        margin: 10px;
+    }
+    .quote-source {
+        font-style: italic;
+        color: #fff;
+        font-family: $heading-font;
+        text-align: center;
+        font-size: 1.2em;
+    }
+}

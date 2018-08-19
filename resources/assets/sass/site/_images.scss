@@ -1,0 +1,26 @@
+.e2s-circle-image {
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    padding-top: 100%;
+    background: white;
+}
+
+.img-cover {
+    object-fit: cover;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    object-position: center center;
+}
+.compat-object-fit {
+    img {
+        opacity: 0;
+    }
+}

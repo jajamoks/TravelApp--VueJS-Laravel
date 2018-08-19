@@ -1,0 +1,48 @@
+.login-hero {
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+}
+
+@media  (min-width: 768px) {
+    .login-page {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 100%;
+        .panel {
+
+            margin-right: 10%;
+            width: 35%;
+            border: none;
+            box-shadow: none;
+            h3 {
+                text-align: center;
+            }
+
+
+        }
+    }
+}
+.login-page {
+    background: url('https://res.cloudinary.com/escapetoshape/image/upload/v1495728886/bigstock-beautiful-seascape-with-coastl-147493181.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .panel {
+        background-color: transparent;
+        input {
+            background: transparent;
+            border: 1px solid;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        .form-control {
+            margin-bottom: 5px;
+        }
+    }
+}

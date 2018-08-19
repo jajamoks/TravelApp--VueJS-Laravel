@@ -1,0 +1,22 @@
+.quote-large {
+    .quote-content {
+        font-size: 1.3em;
+        font-style: italic;
+        line-height: 1.4em;
+
+    }
+    .quote-source {
+        font-weight: bold;
+    }
+}
+.quote-medium {
+    margin-top: 40px;
+    .quote-content {
+        font-size: 1.1em;
+        font-style: italic;
+        line-height: 1.2em;
+    }
+    .quote-source {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,26 @@
+.policy-question {
+    font-style: italic;
+    font-weight: 900;
+}
+
+#travel-insurance-embed {
+    min-height: 640px;
+}
+
+@media (min-width: 786px) {
+    #travel-insurance-embed {
+        min-height: 400px;
+    }
+}
+
+@media (min-width: 487px) {
+    #travel-insurance-embed {
+        .embed-responsive-item {
+            max-height: 400px;
+        }
+    }
+}
+
+html#qm .panel {
+    height: auto;
+}

@@ -1,0 +1,90 @@
+.travel-advisors {
+    .e2s-wide-list-section {
+        .item {
+            .action-container {
+                position: relative;
+                img {
+                    max-height: 280px;
+                }
+                .action {
+                    position: absolute;
+                    top:0;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                    background: rgba(0,0,0, .2);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+        }
+    }
+    .travel-advisor-benefits {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        font-family: $fancy-font;
+        text-shadow: 1px 1px 1px #000;
+        font-size: 1.1em;
+        div {
+            margin-bottom: 5px;
+        }
+    }
+}
+.sidebar {
+    img {
+        max-height: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+.expertise-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        .expertise-list-item {
+            float:left;
+            padding: 5px;
+            word-wrap: break-word;
+            width: auto;
+            &:not(:first-child) {
+                &:before {
+                    content:'\2219';
+                    position: relative;
+                    right: 5px;
+                }
+            }
+        }
+    }
+
+.team-member-featured {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-member-image {
+    height:300px;
+    width: 300px;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    .team-member-image {
+        margin-right: 20px;
+    }
+}

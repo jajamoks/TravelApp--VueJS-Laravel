@@ -1,0 +1,9 @@
+export const MyEscapes = require('./reservations/my-escapes.vue');
+export const Reservation = require('./reservations/reservation.vue');
+export const Payment = require('./reservations/payment.vue');
+export const Layout = require('./layout.vue');
+export const FlightInfo = require('./reservations/flight-info.vue');
+export const Itinerary = require('./reservations/itinerary.vue');
+export const PackingList = require('./reservations/packing-list.vue');
+export const ReadingList = require('./reservations/reading-list.vue');
+export const ContactInfo = require('./reservations/contact-info.vue');

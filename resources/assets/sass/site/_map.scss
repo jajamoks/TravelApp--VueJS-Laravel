@@ -1,0 +1,13 @@
+.e2s-map-label {
+    color: #d4af37;
+    font-size: 13px;
+    font-family: $primary-font;
+}
+
+#map {
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://res.cloudinary.com/escapetoshape/image/upload/v1505515456/map_wide_vyuvp1.png);
+}
