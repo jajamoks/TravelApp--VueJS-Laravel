@@ -19,7 +19,7 @@
     "jquery-backstretch": "^2.1.16",
     "jquery.easing": "^1.4.1",
     "laravel-mix": "^0.8.3",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "slick-carousel": "^1.6.0",
     "vue": "^2.3.3",
     "webpack-bundle-analyzer": "^2.8.2"
